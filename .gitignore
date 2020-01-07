@@ -1,0 +1,25 @@
+__pycache__
+.mypy_cache
+.DS_store
+.vscode
+*.env*
+
+
+# Local .terraform directories
+**/.terraform/*
+**/.terraform/
+
+# .tfstate files
+*.tfstate
+*.tfstate.*
+*.zip
+
+# Crash log files
+crash.log
+
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+

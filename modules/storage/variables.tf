@@ -1,5 +1,5 @@
 
 variable "bucket_names" {
-    type = "list"
+    type = list
     default = ["default"]
 }

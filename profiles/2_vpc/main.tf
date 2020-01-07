@@ -1,6 +1,6 @@
 
 module "if-01" {
-  source = "../../_modules/internet_facing"
+  source = "../../modules/internet_facing"
   
   # VARIABLES
   title = "${var.title}"
