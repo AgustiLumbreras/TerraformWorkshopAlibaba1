@@ -2,4 +2,5 @@
 #region = "cn-hongkong"
 
 bucket_name = "workshop1terraform"
+stack_prefix = "blue"
 

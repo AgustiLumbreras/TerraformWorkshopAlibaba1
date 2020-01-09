@@ -1,17 +1,14 @@
 
-module "if-01" {
-  source = "../../modules/internet_facing"
+module "vpc" {
+  source = "../../modules/vpc"
   
   # VARIABLES
-  title = "${var.title}"
-  # Conti Facing
-  cidr_subnets = "${var.zones_cidr}"
-  cidr_subnets_names = "${var.zones_names}"
+  title = var.title
   # Public
-  cidr_public_subnets = "${var.zones_cidr_public_subnets}"
-  cidr_public_subnets_names = "${var.zones_cidr_public_subnets_names}"
+  cidr_public_subnets = var.zones_cidr_public_subnets
+  cidr_public_subnets_names = var.zones_cidr_public_subnets_names
   # Private
-  cidr_private_subnets = "${var.zones_cidr_private_subnets}"
-  cidr_private_subnets_names = "${var.zones_cidr_private_subnets_names}"
+  cidr_private_subnets = var.zones_cidr_private_subnets
+  cidr_private_subnets_names = var.zones_cidr_private_subnets_names
 
 }

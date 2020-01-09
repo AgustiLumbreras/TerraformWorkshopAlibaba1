@@ -4,7 +4,7 @@
 
 terraform {
   backend "local" {
-    path = "/opt/workshop/terraform/terraformSTORAGE.tfstate"
+    path = "/opt/workshop/terraform/terraformSTORAGE_A.tfstate"
   }
 }
 

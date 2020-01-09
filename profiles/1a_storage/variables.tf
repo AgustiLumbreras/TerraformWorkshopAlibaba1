@@ -3,3 +3,8 @@ variable "bucket_name" {
     description = "Bucket name that needs to be created"
 }
 
+variable "stack_prefix" {
+    type = string
+    description = "An Unique Stack Prefix"
+}
+
