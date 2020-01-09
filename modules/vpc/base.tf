@@ -1,6 +1,6 @@
 
 resource "alicloud_vpc" "vpc" {
-  name       = var.title
+  name       = "${var.stack_prefix}-${var.title}"
   cidr_block = var.vpc_cidr
 }
 
@@ -11,12 +11,12 @@ resource "alicloud_vswitch" "vsw" {
   #availability_zone = lookup(data.alicloud_zones.zones_ds.zones[count.index],"id")
 
   cidr_block = element(var.cidr_subnets, count.index)
-  name = "${var.cidr_subnets_names}-${count.index}"
+  name = "${var.stack_prefix}-${var.cidr_subnets_names}-${count.index}"
 }
 
 resource "alicloud_route_table" "route_table" {
   vpc_id = alicloud_vpc.vpc.id
-  name = "rt-Workshop"
+  name = "rt-${var.stack_prefix}-Workshop"
 }
 
 resource "alicloud_route_table_attachment" "rt_attachment" {

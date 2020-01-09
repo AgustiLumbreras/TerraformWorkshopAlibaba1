@@ -1,4 +1,7 @@
-
+variable "stack_prefix" {
+    type = string
+    description = "An Unique Stack Prefix"
+}
 
 variable vpc_cidr {
     type = string
