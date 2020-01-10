@@ -25,3 +25,10 @@ resource "alicloud_route_table_attachment" "rt_attachment" {
   route_table_id = alicloud_route_table.route_table.id
 }
 
+
+#resource "alicloud_eip" "eip1" {
+#  bandwidth            = "1"
+#  internet_charge_type = "PayByBandwidth"
+#}
+
+

@@ -1,5 +1,5 @@
 terraform {
   backend "local" {
-    path = "/opt/workshop/terraform/terraformVPC.tfstate"
+    path = "/opt/workshop/terraform/terraformALL.tfstate"
   }  
 }
